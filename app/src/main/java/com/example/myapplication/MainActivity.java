@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent register = new Intent(MainActivity.this, Register.class);
+                startActivity(register);
             }
         });
     }

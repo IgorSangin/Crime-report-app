@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Register">
 
     <LinearLayout
         android:orientation="vertical"
@@ -29,6 +29,21 @@
             app:met_primaryColor="@android:color/black"
             app:met_singleLineEllipsis="true"
             />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="40"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtPassword"
             android:hint="Password"
@@ -48,15 +63,15 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:background="@color/btnBackground2"
-        android:text="Sign In"
+        android:background="@color/btnBackground1"
+        android:text="Register"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>
