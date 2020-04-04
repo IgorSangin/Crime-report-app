@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.myapplication.Model.User;
+import com.example.myapplication.Storage.Storage;
 import com.google.android.gms.common.internal.service.Common;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -55,7 +56,10 @@ public class Login extends AppCompatActivity {
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             user.setPhone(edtPhone.getText().toString());
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
-                                Toast.makeText(Login.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                Intent homeIntent = new Intent(Login.this, Home.class);
+                                Storage.currentUser = user;
+                                startActivity(homeIntent);
+                                finish();
 
                             } else {
                                 Toast.makeText(Login.this, "Incorrect Password!", Toast.LENGTH_SHORT).show();
