@@ -15,7 +15,7 @@
         android:layout_height="wrap_content">
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/Location"
+            android:id="@+id/location"
             android:hint="Crime Location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,16 +25,24 @@
             android:inputType="text"
             app:met_baseColor="@android:color/black"
             app:met_floatingLabel="highlight"
-            app:met_maxCharacters="40"
+            app:met_maxCharacters="60"
             app:met_primaryColor="@android:color/black"
             app:met_singleLineEllipsis="true" />
+        
+        <Spinner
+            android:id="@+id/spinnerMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
 
         <EditText
             android:id="@+id/textArea"
             android:hint="Crime Details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="@drawable/border"
             android:gravity="top|left"
             android:inputType="textMultiLine"
             android:overScrollMode="always"
@@ -46,5 +54,17 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/btnBackground1"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

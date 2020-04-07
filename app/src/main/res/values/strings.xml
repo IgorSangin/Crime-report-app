@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">My Application</string>
+    
+    <string-array name="options">
+        <item>Select type of crime:</item>
+        <item>Anti-social behaviour</item>
+        <item>Burglary</item>
+        <item>Criminal Damage</item>
+        <item>Domestic Violence</item>
+        <item>Fraud or Forgery</item>
+        <item>Harassment or Stalking</item>
+        <item>Motoring</item>
+        <item>Mugging or Robbery</item>
+        <item>Sexual Offence</item>
+        <item>Street Violence</item>
+        <item>Terrorism</item>
+        <item>Theft or Handling</item>
+        <item>Other</item>
+    </string-array>
 </resources>
